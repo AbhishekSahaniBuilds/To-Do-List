@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="stylesheet" href="src/css/main.css" />
+    <link rel="icon" href="src/icons/site_logo.png" />
+  </head>
+  <body>
+    <a href="/src/pages/account.html">
+      <div class="account_section">
+        <div class="user_icon_holder">
+          <img src="src/icons/user_icon.png" id="user_icon" />
+        </div>
+      </div>
+    </a>
+    <div class="to_do_app">
+      <div class="heading_container">
+        <h1 id="heading">To Do List</h1>
+      </div>
+
+      <div class="toolbar">
+        <input id="task_feild" type="input" placeholder="Enter you new task" />
+        <button id="add_task">Add</button>
+      </div>
+
+      <div class="task_list"></div>
+
+      <div class="extra_tools">
+        <a href="./src/pages/about.html">
+          <button id="about_button">About</button>
+        </a>
+        <a href="./src/pages/register_user.html">
+          <button id="register_user">Register</button>
+        </a>
+
+        <a href="./src/pages/login_user.html">
+          <button id="login_user">Login</button>
+        </a>
+
+        <button id="delete_tasks">
+          <img id="dustbin_icon" src="src/icons/dustbin.png" alt="del" />
+        </button>
+      </div>
+    </div>
+    <script src="src/javascript/app.js" type="module"></script>
+  </body>
+</html>

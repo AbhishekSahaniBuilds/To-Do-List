@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: "JetBrains Mono", monospace;
+}
+
+input:focus {
+  outline: none;
+}
+
+body {
+  background-color: #a5c2e8;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  min-height: 75vh;
+  height: auto;
+  background-color: #e2f3f3;
+  box-shadow:
+    0.5vmin 0.5vmin 1vmin rgba(0, 0, 0, 0.5),
+    -0.5vmin -0.5vmin 1vmin rgba(255, 255, 255, 0.2);
+  border-radius: 1.7vmin;
+  align-items: stretch;
+  padding-bottom: 2.4vmin;
+}
+
+.top_section {
+  margin: 1vmin auto 1vmin;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 1vmin 2vmin;
+}
+
+.back_icon_holder {
+  height: 5vmin;
+  width: 5vmin;
+  grid-column: 1;
+  justify-self: start;
+}
+
+#back_icon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+#title {
+  font-weight: bolder;
+  font-size: 5vmin;
+  grid-column: 2;
+  justify-self: center;
+  margin: 0;
+  text-align: center;
+  color: rgb(20, 20, 20);
+}
+
+.account_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+#register_user,
+#login_user {
+  background-color: rgba(255, 68, 0, 0.644);
+  color: white;
+  font-size: 2.4vmin;
+  margin-right: 1.5vmin;
+  padding: 0.5vmin 2vmin;
+  border-radius: 1vmin;
+  cursor: pointer;
+}
+
+#logout_user,
+#delete_account {
+  background-color: rgba(255, 8, 0, 0.644);
+  color: white;
+  font-size: 2.4vmin;
+  margin-right: 1.5vmin;
+  padding: 0.5vmin 2vmin;
+  border-radius: 1vmin;
+  cursor: pointer;
+}
+
+.account_info_section {
+  padding-left: 2vh;
+}
+
+#account_info {
+  font-size: 2.3vmin;
+  color: rgb(20, 20, 20);
+}
+
+.account_information_section {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 2vmin;
+  width: 100%;
+}
+
+.username_container {
+  position: relative;
+  top: 2vmin;
+  display: flex;
+  padding-left: 2vh;
+  align-items: center;
+}
+
+#username_text,
+#username_holder {
+  font-size: 2.3vmin;
+  color: rgb(20, 20, 20);
+  margin: 0;
+}
+
+#change_password {
+  position: absolute;
+  right: 2vh;
+  background-color: rgba(255, 68, 0, 0.644);
+  color: white;
+  font-size: 2.4vmin;
+  padding: 0.5vmin 2vmin;
+  border-radius: 1vmin;
+  cursor: pointer;
+  border: none;
+}
+
+.why_account_section {
+  position: relative;
+  top: 8vmin;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 2vmin;
+}
+
+.why_text {
+  width: 100%;
+  max-width: 100%;
+  padding: 3vmin;
+  background-color: #ffffff;
+  border: 0.3vmin solid #6968688e;
+  border-radius: 1.5vmin;
+  box-shadow: 0.4vmin 0.4vmin 0 rgba(0, 0, 0, 0.15);
+}
+
+.why_text h2,
+.why_text p,
+.why_text .security-notice p {
+  text-align: left !important;
+}
+
+.why_text h2 {
+  font-size: 3vmin;
+  font-weight: bold;
+  color: #141414;
+  margin-top: 0;
+  margin-bottom: 2vmin;
+}
+
+.why_text p {
+  font-size: 2.1vmin;
+  line-height: 1.6;
+  color: #334155;
+  margin: 0 0 1.5vmin 0;
+}
+
+.why_text p:last-child {
+  margin-bottom: 0;
+}
+
+.why_text .security-notice {
+  color: #7c2d12;
+  background-color: #ffedd5;
+  padding: 1.5vmin;
+  border-left: 0.6vmin solid rgba(255, 68, 0, 0.8);
+  border-radius: 0.8vmin;
+  margin-top: 2.5vmin;
+}
+
+.bottom_section {
+  position: relative;
+  top: 10vmin;
+}

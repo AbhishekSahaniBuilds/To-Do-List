@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account</title>
+    <link rel="stylesheet" href="../css/account_page.css" />
+    <link rel="icon" href="../icons/site_logo.png" />
+  </head>
+  <body>
+    <div class="container">
+      <section class="top_section">
+        <div class="back_icon_holder">
+          <a href="/index.html"
+            ><img src="../icons/back_icon.png" id="back_icon"
+          /></a>
+        </div>
+        <h1 id="title">Account</h1>
+      </section>
+      <section class="account_section">
+        <span class="account_info_section">
+          <p id="account_info"></p>
+        </span>
+        <span class="account_button">
+          <a href="../pages/register_user.html">
+            <button id="register_user">Register</button>
+          </a>
+
+          <a href="../pages/login_user.html">
+            <button id="login_user">Login</button>
+          </a>
+
+          <button id="logout_user">Logout</button>
+        </span>
+      </section>
+
+      <section class="account_information_section">
+        <div class="username_container">
+          <pre id="username_text">Username: </pre>
+          <span id="username_holder"></span>
+        </div>
+        <button id="change_password">Change Password</button>
+      </section>
+      <section class="why_account_section">
+        <div class="why_text">
+          <h2>Why Create an Account?</h2>
+          <p>
+            Creating an account allows you to securely save and manage your
+            tasks.
+          </p>
+          <p>
+            Registration is completely free and does not require any personal
+            details.
+          </p>
+          <p>
+            Simply choose a unique username and a secure password to get
+            started.
+          </p>
+          <div class="security-notice">
+            <p>
+              <strong>Important:</strong> A unique security token/ID is
+              associated with every account. Keep this token strictly
+              confidential and do not share it with anyone.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="bottom_section">
+        <button id="delete_account">Delete Account</button>
+      </section>
+    </div>
+    <script type="module" src="../javascript/account_manager.js" defer></script>
+  </body>
+</html>

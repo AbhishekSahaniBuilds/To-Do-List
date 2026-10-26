@@ -1,0 +1,20 @@
+# ==========================================
+# Backend: to_do_list_backend ignores
+# ==========================================
+
+# Byte-compiled / optimized / DLL files
+to_do_list_backend/**/__pycache__/
+to_do_list_backend/**/*.py[cod]
+to_do_list_backend/**/*$py.class
+
+# Virtual Environment
+to_do_list_backend/env/
+to_do_list_backend/venv/
+to_do_list_backend/ENV/
+
+# Environments and Secrets
+to_do_list_backend/.env
+
+# Logs
+to_do_list_backend/**/*.log
+to_do_list_backend/app.log

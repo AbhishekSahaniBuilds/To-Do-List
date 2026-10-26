@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: Jetbrains mono;
+}
+input:focus {
+  outline: none;
+}
+
+body {
+  background-color: #a5c2e8;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 60vmin;
+  height: 50vmin;
+
+  background-color: #e2f3f3;
+  box-shadow:
+    0.5vmin 0.5vmin 1vmin rgba(0, 0, 0, 0.5),
+    -0.5vmin -0.5vmin 1vmin rgba(255, 255, 255, 0.2);
+
+  border-radius: 1.7vmin;
+
+  align-items: stretch;
+  padding-bottom: 2.4vmin;
+}
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 4vmin;
+  padding-bottom: 4vmin;
+  height: 45vmin;
+}
+.input {
+  align-self: center;
+  text-align: left;
+  width: 90%;
+  height: 5.6vmin;
+  border-radius: 2vmin;
+  padding-left: 3vmin;
+  background: transparent;
+  font-size: 2.4vmin;
+  border: 0.01px solid rgba(0, 0, 0, 0.1);
+}
+.form_error {
+  color: red;
+  text-align: left;
+  padding-left: 3vmin;
+}
+
+.top_container {
+  margin: 1vmin auto 1vmin;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 1vmin 2vmin;
+}
+
+.back_icon_holder {
+  height: 5vmin;
+  width: 5vmin;
+  grid-column: 1;
+  justify-self: start;
+}
+
+#back_icon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+#title {
+  font-weight: bolder;
+  font-size: 5vmin;
+  grid-column: 2;
+  justify-self: center;
+  margin: 0;
+  text-align: center;
+  color: rgb(20, 20, 20);
+}
+
+.register_para {
+  font-size: 1.8vmin;
+  justify-self: flex-end;
+}
+#register_page_link {
+  text-decoration: none;
+  color: #89b4f0;
+}
+
+#submit_button {
+  background-color: rgba(255, 68, 0, 0.644);
+  color: white;
+  align-self: center;
+  width: 60%;
+  font-size: 2.4vmin;
+  margin-right: 3vmin;
+  padding: 0.5vmin;
+  padding-right: 2vmin;
+  padding-left: 2vmin;
+  border-radius: 1vmin;
+  cursor: pointer;
+}

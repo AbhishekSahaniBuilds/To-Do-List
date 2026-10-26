@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: Jetbrains mono;
+}
+input:focus {
+  outline: none;
+}
+
+body {
+  background-color: #a5c2e8;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+}
+.account_section {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  align-items: center;
+  justify-content: center;
+}
+.user_icon_holder {
+  width: 10vh;
+  height: 10vh;
+}
+#user_text {
+  font-weight: bolder;
+  color: black;
+}
+
+#user_icon {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  cursor: pointer;
+}
+
+.to_do_app {
+  display: flex;
+  flex-direction: column;
+  width: 60vmin;
+  min-height: 70vmin;
+  height: auto;
+  background-color: #e2f3f3;
+  box-shadow:
+    0.5vmin 0.5vmin 1vmin rgba(0, 0, 0, 0.5),
+    -0.5vmin -0.5vmin 1vmin rgba(255, 255, 255, 0.2);
+
+  border-radius: 1.7vmin;
+
+  align-items: stretch;
+  padding-bottom: 2.4vmin;
+}
+.heading_container {
+  margin: 1vmin auto 1vmin;
+  background: transparent;
+}
+#heading {
+  font-weight: bolder;
+  font-size: 5vmin;
+  color: rgb(20, 20, 20);
+}
+
+.toolbar {
+  margin-top: 1vmin;
+  display: flex;
+  justify-content: space-between;
+}
+#task_feild {
+  padding-left: 3vmin;
+  text-align: left;
+  background: transparent;
+  font-size: 2.4vmin;
+}
+#add_task {
+  background-color: rgba(255, 68, 0, 0.644);
+  color: white;
+  font-size: 2.4vmin;
+  margin-right: 3vmin;
+  padding: 0.5vmin;
+  padding-right: 2vmin;
+  padding-left: 2vmin;
+  border-radius: 1vmin;
+  cursor: pointer;
+}
+.task_list {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1vmin;
+  border-radius: 1.7vmin;
+  min-height: auto;
+  height: auto;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.3vmin;
+}
+.extra_tools {
+  align-self: center;
+  width: 98%;
+  margin-top: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+#about_button {
+  background-color: rgba(255, 68, 0, 0.644);
+  color: white;
+  font-size: 2.4vmin;
+  margin-right: 3vmin;
+  padding: 0.5vmin;
+  padding-right: 2vmin;
+  padding-left: 2vmin;
+  border-radius: 1vmin;
+  cursor: pointer;
+}
+#register_user {
+  background-color: rgba(255, 68, 0, 0.644);
+  color: white;
+  font-size: 2.4vmin;
+  margin-right: 3vmin;
+  padding: 0.5vmin;
+  padding-right: 2vmin;
+  padding-left: 2vmin;
+  border-radius: 1vmin;
+  cursor: pointer;
+}
+#login_user {
+  background-color: rgba(255, 68, 0, 0.644);
+  color: white;
+  font-size: 2.4vmin;
+  margin-right: 3vmin;
+  padding: 0.5vmin;
+  padding-right: 2vmin;
+  padding-left: 2vmin;
+  border-radius: 1vmin;
+  cursor: pointer;
+}
+#delete_tasks {
+  height: 4vmin;
+  width: 4.6vmin;
+  overflow: hidden;
+}
+#dustbin_icon {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  cursor: pointer;
+}
+#dustbin_icon.is_active {
+  filter: invert(13%) sepia(92%) saturate(7477%) hue-rotate(359deg)
+    brightness(97%) contrast(116%);
+}
+
+/* All tasks will fall in these classes*/
+.tasks {
+  display: block;
+  padding-left: 2vmin;
+  font-size: 2.3vmin;
+  cursor: pointer;
+}
+
+.completed_tasks {
+  color: rgba(0, 0, 0, 0.6);
+  display: block;
+  padding-left: 2vmin;
+  font-size: 2.3vmin;
+  text-decoration: line-through;
+  cursor: pointer;
+}

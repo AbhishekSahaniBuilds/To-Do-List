@@ -1,0 +1,8 @@
+root    tasks   create
+                get
+                delete
+        
+        user    get
+                get with id
+                create
+                delete

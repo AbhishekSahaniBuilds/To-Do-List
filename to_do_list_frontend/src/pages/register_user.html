@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register User</title>
+    <link rel="stylesheet" href="/src/css/register_page.css" />
+    <link rel="icon" href="../icons/site_logo.png" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="top_container">
+        <div class="back_icon_holder">
+          <a href="/index.html"
+            ><img src="../icons/back_icon.png" id="back_icon"
+          /></a>
+        </div>
+        <h1 id="title">Register</h1>
+      </div>
+      <form class="register">
+        <input
+          type="text"
+          placeholder="Username"
+          class="input"
+          id="username_input"
+        />
+        <p class="form_error" id="username_error"></p>
+        <input
+          type="password"
+          placeholder="Password"
+          class="input"
+          id="password_input"
+        />
+        <p class="form_error" id="password_error"></p>
+        <input
+          type="password"
+          placeholder="Conform Password"
+          class="input"
+          id="conform_password_input"
+        />
+        <p class="form_error" id="conform_password_error"></p>
+        <button type="submit" id="submit_button">Create User</button>
+      </form>
+      <p class="login_para">
+        Already have an account?
+        <b><a href="./login_user.html" id="login_page_link">Login</a></b>
+      </p>
+    </div>
+    <script
+      type="module"
+      src="/src/javascript/login_register_user/register_user.js"
+    ></script>
+  </body>
+</html>
