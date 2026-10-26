@@ -1,6 +1,6 @@
 //=================task module==========================
 
-const base_url = "http://127.0.0.1:8000";
+const base_url = "https://to-do-list-8mi5.onrender.com/";
 const task_router = base_url + "/tasks";
 
 //Get all Tasks
