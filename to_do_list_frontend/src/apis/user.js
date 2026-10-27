@@ -2,7 +2,7 @@
 //     User Module API Client
 // =========================================================
 
-const base_url = "https://to-do-list-8mi5.onrender.com/";
+import { base_url } from "../config.js";
 const user_router = base_url + "/users";
 
 /**
