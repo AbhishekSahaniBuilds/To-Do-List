@@ -1,6 +1,10 @@
 //=================task module==========================
 
+<<<<<<< HEAD
 const base_url = "https://to-do-list-8mi5.onrender.com";
+=======
+import { base_url } from "../config.js";
+>>>>>>> 4e9cc084a7042430776a409fcd0b63611043dbb5
 const task_router = base_url + "/tasks";
 
 //Get all Tasks
