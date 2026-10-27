@@ -1,4 +1,4 @@
-const base_url = "https://to-do-list-8mi5.onrender.com/";
+const base_url = "https://to-do-list-8mi5.onrender.com";
 
 export async function root() {
   try {

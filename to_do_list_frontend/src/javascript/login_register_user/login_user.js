@@ -55,7 +55,7 @@ async function handleFormSubmit(event) {
       let user_id = result["id"];
       localStorage.setItem("user_id", user_id);
       localStorage.setItem("user_logged_in", true);
-      window.location.href = "/index.html";
+      window.location.href = "../../index.html";
     }
   } catch (error) {
     console.error("Registration failed: ", error);

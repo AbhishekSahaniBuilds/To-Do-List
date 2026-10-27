@@ -68,7 +68,7 @@ async function handleFormSubmit(event) {
 
       localStorage.setItem("user_id", result);
       localStorage.setItem("user_logged_in", true);
-      window.location.href = "/index.html";
+      window.location.href = "../../index.html";
     }
   } catch (error) {
     console.error("Registration failed:", error);
