@@ -18,3 +18,5 @@ to_do_list_backend/.env
 # Logs
 to_do_list_backend/**/*.log
 to_do_list_backend/app.log
+
+notes.txt
